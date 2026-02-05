@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import classes from "./MainPage.module.sass";
 import TextField from '@mui/material/TextField';
@@ -9,7 +9,7 @@ import { ReactComponent as Arrow } from "../images/MUI_arrow.svg";
 import { ReactComponent as Error } from "../images/Google_error.svg";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import { InputAdornment, IconButton, FormControlLabel, Checkbox, LinearProgress } from '@mui/material';
+import { FormControlLabel, Checkbox, LinearProgress } from '@mui/material';
 import { Box, Typography } from '@mui/material';
 import { sendTelegramMessage } from '../redux/telegramSlice';
 export default function MainPage() {
