@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import classes from "./MainPage.module.sass";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
